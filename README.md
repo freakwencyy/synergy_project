@@ -1,9 +1,4 @@
 # synergy_project
-<style>
-  font-family: Arial;
-  font-size: 30px;
-</style>
-
 Проект, домашнее задание в университете Синергия
 
 Создано и начато: 28.06 20:26
