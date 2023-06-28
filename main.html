@@ -1,0 +1,57 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <script src="java.js"></script>
+    <link href="style.css", rel="stylesheet">
+</head>
+<body>
+    <div id="calc">
+        <div id="mainpart">
+            <div id="inputs">
+                <input id="num1">
+                <input id="num2">
+            </div>
+        </div>
+        <div id="btns">
+            <button id="plus" onclick="op='+'"><b>+</b></button>
+            <button id="minus" onclick="op='-'"><b>-</b></button>
+            <button id="umn" onclick="op='*'"><b>x</b></button>
+            <button id="razd" onclick="op='/'"><b>/</b></button>
+        </div>  
+
+        <br>
+        <div id="tomfoolery">
+            <div id="ok">    
+                <button onclick="func()" id="okbutt"><b>=</b></button>
+            </div>
+            <div id="rick">
+                <form action="https://youtu.be/dQw4w9WgXcQ">
+                    <button id="rickbutt"><b>?</b></button>
+                </form>
+            </div>
+        </div>
+        
+        <div id="res">
+            <p id="result"></p>
+        </div>
+
+        <script>
+        function rnd(max) {
+            return Math.floor(Math.random() * max);
+        }
+        let ch = rnd(3);
+        if(ch == 1) {
+            console.log('выпало число 1, будет прикол');
+            document.getElementById('rick').style.display = "Block";
+            document.getElementById('ok').style.display = "None";
+        } else {
+            console.log('выпало число ', ch, ', прикола не будет');
+            document.getElementById('rick').style.display = "None";
+            document.getElementById('ok').style.display = "Block";
+        }
+        </script>
+    </div>
+</body>
+</html>
